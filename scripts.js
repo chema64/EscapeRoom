@@ -1,9 +1,11 @@
 window.RufflePlayer = window.RufflePlayer || {};
 window.addEventListener("load", (event) => {
-    const ruffle = window.RufflePlayer.newest();
-    ruffle.config ={
-        "autoplay": "on",
+    window.RufflePlayer.config = {
+        // Start playing the content automatically, without audio if the browser in use does not allow audio to autoplay
+       "autoplay": "on",
     }
+    const ruffle = window.RufflePlayer.newest();
+
     const player = ruffle.createPlayer();
     const container = document.getElementById("container");
     container.appendChild(player);
