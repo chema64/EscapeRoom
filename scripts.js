@@ -5,10 +5,11 @@ window.addEventListener("load", (event) => {
     //    "autoplay": "on",
     // }
     const ruffle = window.RufflePlayer.newest();
-
+    
     const player = ruffle.createPlayer();
     player.config ={
         autoplay: "on",
+        unmuteOverlay: "hidden",
     }
     const container = document.getElementById("container");
     container.appendChild(player);
