@@ -8,7 +8,7 @@ window.addEventListener("load", (event) => {
     
     const player = ruffle.createPlayer();
     player.style.width = "100vw";
-    player.style.height = "100vw";
+    player.style.height = "100vh";
     player.config ={
         autoplay: "on",
         unmuteOverlay: "hidden",
